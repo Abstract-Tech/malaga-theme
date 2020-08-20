@@ -1,0 +1,118 @@
+@import 'fonts';
+@import "variables";
+
+html,
+body {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif !important;
+  line-height: 24px !important;
+
+
+}
+
+h1 {
+  font-size: 2.75rem !important;
+  font-weight: 700 !important;
+  font-family: "Roboto Slab", Georgia, Times, Times New Roman, serif !important;
+  line-height: 55px !important;
+
+  @media screen and (max-width:991px) {
+    font-size: 1.5rem !important;
+    line-height: 30px !important;
+  }
+
+}
+
+h2 {
+  font-size: 1.75rem !important;
+  font-weight: 700 !important;
+  font-family: "Roboto Slab", Georgia, Times, Times New Roman, serif !important;
+  line-height: 35px !important;
+
+  @media screen and (max-width:991px) {
+    font-size: 1.375rem !important; 
+    line-height: 26px !important;
+  }
+}
+
+h3 {
+  font-size: 1.75rem !important;
+  font-weight: 700 !important;
+  font-family: "Roboto Slab", Georgia, Times, Times New Roman, serif !important;
+  line-height: 35px !important;
+
+  @media screen and (max-width:991px) {
+    font-size: 1.250rem !important;
+    line-height: 24px !important;
+  }
+}
+
+h4 {
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  font-family: "Roboto Slab", Georgia, Times, Times New Roman, serif !important;
+  line-height: 30px !important;
+
+  @media screen and (max-width:991px) {
+    font-size: 1rem !important;
+    line-height: 24px !important;
+  }
+}
+
+h5 {
+  font-size: 1.25rem !important;
+  font-weight: 700 !important;
+  font-family: "Roboto Slab", Georgia, Times, Times New Roman, serif !important;
+  line-height: 25px !important;
+
+  @media screen and (max-width:991px) {
+    font-size: 1rem !important;
+    line-height: 24px !important;
+  }
+}
+
+h6 {
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+  font-family: "Roboto Slab", Georgia, Times, Times New Roman, serif !important;
+  line-height: 20px !important;
+
+
+}
+
+h7 {
+  font-size: 0.875rem !important;
+  font-weight: 700 !important;
+  font-family: "Roboto Slab", Georgia, Times, Times New Roman, serif !important;
+  line-height: 18px !important;
+
+  @media screen and (max-width:991px) {
+    font-size: 0.875rem !important;
+    line-height: 24px !important;
+  }
+}
+
+p,
+a,
+span:not(.fa),
+label,
+option,
+ul,
+ol,
+li,
+legend {
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif !important;
+  line-height: 24px !important;
+}
+
+a:not(.btn):hover,
+a:not(.btn):focus,
+a:visited:not(.btn):hover,
+a:visited:not(.btn):focus {
+  color: $primary !important;
+  text-decoration: underline;
+
+}

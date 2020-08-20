@@ -1,0 +1,1557 @@
+@import 'fonts';
+@import 'typography';
+
+html,
+body {
+
+    font-style: normal;
+    line-height: 1em;
+}
+
+
+button,
+input {
+    border-radius: 0;
+
+    &:focus {
+        border: 1px solid $primary;
+    }
+}
+
+a:not(.btn):hover {
+    color: $primary;
+}
+
+select {
+    background-color: $inverse;
+
+    &:hover {
+        color: $primary;
+
+    }
+}
+
+// sign-in button
+.global-header .nav-links div.secondary a.sign-in-btn,
+button.banner-header {
+    background-color: $primary;
+    color: $inverse;
+    border: none;
+    border-radius: 0;
+    background-image: none;
+    text-shadow: none;
+
+    &:hover:not(:disabled) {
+        background-color: $inverse;
+        color: $primary;
+        border: 1px solid $primary;
+        background-image: none;
+        box-shadow: none;
+    }
+}
+
+// registertion button
+.global-header .nav-links div.secondary a.register-btn {
+    background-color: $inverse;
+    color: $primary;
+    border: 1px solid $primary;
+    border-radius: 0;
+
+    &:hover {
+        background-color: $primary;
+        color: $inverse;
+        box-shadow: none;
+    }
+}
+
+.global-header {
+    border: 0;
+    box-shadow: none;
+}
+
+.banner {
+    padding: 15px;
+
+    &-search-input {
+        width: 79%;
+    }
+}
+
+.home>header {
+    background-color: #F4F4F4;
+    margin: 0;
+    width: auto;
+
+    .outer-wrapper {
+        -webkit-animation: none;
+        animation: none;
+    }
+
+    .title {
+        background: transparent;
+        box-shadow: none;
+        transition: none;
+    }
+}
+
+div.wrapper-footer {
+    box-shadow: none;
+}
+
+.grid-container {
+    max-width: auto;
+}
+
+@media (min-width: 992px) {
+    header.global-header .nav-links div.secondary {
+        float: right;
+        margin: 15px 8px 0px 0px;
+    }
+}
+
+div.container .wrapper-logo {
+    margin: 0;
+    width: auto;
+    float: none;
+
+    img {
+        width: 120px;
+    }
+}
+
+div.wrapper-footer footer#footer-openedx .colophon .nav-colophon {
+    display: flex;
+    margin: 0;
+}
+
+.wrapper-footer {
+    margin-top: 80px;
+}
+
+.courses-container .courses {
+
+    article.course.card {
+        border: 0;
+        box-shadow: none;
+        border-bottom: 3px solid $primary;
+    }
+
+    article.course.card div.course-info .course-title {
+        color: $primary;
+
+        a {
+            font-family: "Roboto Slab", Georgia, Times, Times New Roman, serif !important;
+            font-weight: 700 !important;
+            font-size: 22px !important;
+
+            @media screen and (max-width:991px) {
+                font-size: 16px !important;
+            }
+        }
+    }
+
+    article.course .course-image .cover-image .learn-more {
+        background: $primary;
+    }
+
+}
+
+section.course-info {
+    margin-left: -20px;
+    margin-right: -20px;
+
+    header.course-profile .intro-inner-wrapper {
+        background: transparent;
+        border: none;
+        box-shadow: none;
+    }
+}
+
+section.course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.register {
+    background-color: transparent;
+    background-image: none;
+    color: $primary;
+    box-shadow: none;
+    text-shadow: none;
+    border-radius: 0;
+    width: 100%;
+    border: 1px solid $primary;
+
+    &:hover:not(:disabled) {
+        background-color: $primary;
+        background-image: none;
+        color: $inverse !important;
+    }
+
+    &:focus:not(:disabled) {
+        box-shadow: none;
+
+    }
+
+    &:active:not(:disabled) {
+        box-shadow: none;
+    }
+}
+
+
+@media (max-width: 991px) {
+    header.global-header .hamburger-menu:focus {
+        outline: none;
+    }
+}
+
+section.course-info .container .wrap-instructor-info .instructor-info-action,
+div.wrap-instructor-info .instructor-info-action {
+    border-radius: 0;
+    color: #c2387d !important;
+
+    &:hover {
+        background-image: none;
+        color: $inverse !important;
+        text-decoration: none !important;
+    }
+
+}
+
+
+.login-register-content {
+    border-top: 1px solid $primary;
+    margin-top: -20px;
+}
+
+#login-and-registration-container {
+    border: 1px solid $primary;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+button.action.action-primary.action-update.js-login.login-button,
+button.action.action-primary.action-update.js-register.register-button,
+button.action.action-primary.action-update.js-reset {
+    width: 100%;
+    background-color: $primary;
+    color: $inverse;
+    border: 1px solid transparent;
+    border-radius: 0;
+    background-image: none;
+
+    &:hover:not(:disabled) {
+        background-color: $inverse;
+        color: $primary;
+        border: 1px solid $primary;
+        background-image: none;
+        box-shadow: none;
+    }
+}
+
+#register h2,
+a.form-toggle,
+a.form-toggle:hover,
+#register a,
+#register a:hover,
+#login-and-registration-container h2,
+#login-and-registration-container a,
+#login-and-registration-container a:hover {
+    color: $primary;
+}
+
+/* div.wrapper-footer footer#footer-openedx .colophon {
+
+
+    @media screen and (max-width:478px) {
+        margin-left: 0;
+    }
+} */
+
+.wrapper-logo img {
+    width: 120px;
+}
+
+.wrapper-logo {
+    width: auto;
+}
+
+nav.nav-colophon ol {
+    @media screen and (max-width:991px) {
+        padding: 0;
+    }
+}
+
+nav.nav-colophon li {
+    &:first-child {
+        padding: 0;
+        padding-right: 15px;
+    }
+
+    padding: 0;
+    padding-right: 15px;
+
+    @media screen and (max-width:991px) {
+        padding: 0;
+        padding-right: 15px;
+    }
+
+}
+
+div.wrapper-footer footer#footer-openedx a,
+div.wrapper-footer footer#footer-openedx div.colophon nav.nav-colophon li a {
+    color: $link;
+
+    &:hover {
+        color: $link;
+    }
+}
+
+div.wrapper-footer footer#footer-openedx a:hover,
+div.wrapper-footer footer#footer-openedx div.colophon nav.nav-colophon li a {
+    color: $link;
+
+    &:hover {
+        color: $link;
+    }
+}
+
+section.find-courses {
+    background: transparent;
+}
+
+div#dashboard-main {
+    .course-title a {
+        color: $primary;
+        font-family: "Roboto Slab", Georgia, Times, Times New Roman, serif !important;
+        font-weight: 700 !important;
+        font-size: 22px !important;
+
+        @media screen and (max-width:991px) {
+            font-size: 16px !important;
+        }
+
+    }
+
+    .main-container .my-courses .course .details .wrapper-course-image {
+        width: 33%;
+    }
+
+    .main-container .my-courses .course .details .wrapper-course-details .wrapper-course-actions {
+        margin-top: 50px;
+    }
+
+    .course-actions a {
+        background-color: $primary;
+        color: $inverse !important;
+        border: 1px solid transparent;
+        border-radius: 0;
+
+
+        &:hover,
+        &:focus {
+            background-color: $inverse;
+            color: $primary !important;
+            border: 1px solid $primary;
+        }
+    }
+
+    a.action-unenrol {
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    header.global-header .nav-links .main .nav-tab a.active {
+
+        border-bottom-color: $primary;
+
+    }
+
+    header.global-header .nav-links .main .nav-tab a {
+        &:hover {
+            border-bottom-color: $primary;
+        }
+    }
+}
+
+
+section.course-info header.course-profile .intro-inner-wrapper .intro .main-cta strong {
+    background-color: $primary;
+    background-image: none;
+    color: $inverse;
+    box-shadow: none;
+    text-shadow: none;
+    border: none;
+    border-radius: 0;
+
+    &:hover:not(:disabled),
+    &:active:not(:disabled),
+    &:focus:not(:disabled) {
+        background-color: $inverse;
+        color: $primary;
+        border: 1px solid $primary;
+        background-image: none;
+        box-shadow: none;
+    }
+}
+
+header.global-header.container.slim {
+    margin-top: 0;
+}
+
+nav.wrapper-preview-menu {
+    background-color: $primary;
+    margin-top: 1rem;
+
+}
+
+.wrapper-preview-menu .preview-actions .action-preview .action-preview-select {
+    padding: 5px;
+    background-color: $inverse;
+}
+
+/* .content-wrapper .course-tabs::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+.content-wrapper .course-tabs::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+.content-wrapper .course-tabs::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: $primary;
+}
+ */
+.content-wrapper .course-tabs .navbar-nav {
+    margin-bottom: 5px;
+}
+
+div.content-wrapper .course-tabs .nav-item.active .nav-link,
+.content-wrapper .course-tabs .nav-item:hover .nav-link {
+    border-bottom-color: $primary;
+    color: $primary;
+}
+
+.form-actions a.btn.btn-primary,
+button#expand-collapse-outline-all-button {
+    background-color: $primary;
+    color: $inverse;
+    border: 1px solid transparent;
+    box-shadow: none;
+    border-radius: 0;
+
+    &:hover {
+        background-color: $inverse;
+        color: $primary;
+        border: 1px solid $primary;
+    }
+}
+
+header.global-header {
+    border-bottom: none;
+    box-shadow: none;
+    background: transparent;
+    padding: 0;
+}
+
+header.global-header .nav-links .secondary .dropdown-user-menu {
+    right: auto;
+}
+
+select.action-preview-select option {
+    &:hover {
+        background-color: $primary;
+    }
+}
+
+div.dashboard .main-container .my-courses .listing-courses .course-item .course-container {
+    border: none;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+div.dashboard .main-container .my-courses .listing-courses .course-item:last-child .course-container {
+    border-bottom: none;
+}
+
+
+
+section.home>.container {
+    padding: 0;
+}
+
+div.wrapper-footer footer#footer-openedx .footer-about-openedx {
+    float: right;
+
+    @media screen and (max-width:478px) {
+        float: left;
+    }
+
+    @media screen and (max-width: 991px) {
+        width: auto;
+    }
+
+}
+
+section.home>header .outer-wrapper {
+    @media screen and (max-width: 767px) {
+        padding: 15px;
+
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: row;
+        padding: 15px 0;
+
+        @media screen and (max-width: 991px) {
+            padding: 15px 0;
+        }
+
+        .banner-search-input {
+            border-radius: 0;
+        }
+
+    }
+
+    .title {
+        @media screen and (max-width: 767px) {
+            padding: 0;
+        }
+    }
+}
+
+
+
+
+
+section.course-info header.course-profile {
+    padding-top: 0;
+}
+
+.social-sharing {
+    display: flex;
+}
+
+.fa-twitter {
+    color: $twitter;
+}
+
+.fa-thumbs-up {
+    color: $facebook;
+}
+
+.fa-envelope {
+    color: $gmail;
+}
+
+section.course-info .course-sidebar {
+    @media screen and (max-width: 767px) {
+        width: 100%;
+    }
+}
+
+body.view-course .container>div.row {
+    display: flex;
+}
+
+nav.nav-colophon li {
+    float: left;
+    list-style-type: none;
+
+}
+
+section.course-info header.course-profile .intro-inner-wrapper .intro>.heading-group {
+    @media screen and (max-width:478px) {
+        margin-bottom: 0px;
+        padding-bottom: 10px;
+    }
+}
+
+section.course-info header.course-profile .intro-inner-wrapper .intro .main-cta {
+
+    span.register,
+    strong {
+        @media screen and (max-width:991px) {
+            width: 150%;
+            margin-bottom: 15px;
+        }
+    }
+
+}
+
+section.course-info header.course-profile .intro-inner-wrapper .intro {
+    @media screen and (max-width:478px) {
+        padding: 10px;
+    }
+}
+
+
+
+.view-course .container>div {
+    display: block;
+    border: none;
+    box-shadow: none;
+}
+
+section.instructor-dashboard-content-2 {
+    display: block;
+    width: 100%;
+    padding: 40px 0;
+}
+
+button.btn-link {
+    color: $link;
+
+    &:hover {
+        color: $primary;
+    }
+}
+
+
+section.instructor-dashboard-content-2 input[type="button"] {
+    background-color: $primary;
+    background-image: none;
+    color: $inverse;
+    text-shadow: none !important;
+    box-shadow: none;
+
+    &:hover:not(:disabled),
+    &:active:not(:disabled),
+    &:focus:not(:disabled) {
+        background-color: $inverse;
+        background-image: none;
+        color: $primary;
+        border: 1px solid $primary;
+        box-shadow: none;
+    }
+}
+
+section.courses-container .courses .course {
+    .course-image .cover-image {
+        @media (min-width : 1301px) and (max-width : 1500px) {
+            height: 190px;
+
+        }
+
+        @media (min-width : 1501px) and (max-width : 1800px) {
+            height: 225px;
+        }
+
+        @media (min-width : 1801px) {
+            height: 260px;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 0;
+        }
+    }
+
+    .course-info {
+        height: auto;
+
+        .course-date {
+            padding: 10px 15px;
+        }
+    }
+}
+
+#main {
+
+    .fa-chevron-right,
+    .outline-item {
+        color: $primary;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+}
+
+aside.course-sidebar {
+    a.course-tool-link {
+        color: $primary;
+    }
+}
+
+div.date-summary-container .date-summary-todays-date {
+    border-left: 3px solid $primary;
+}
+
+div.wrapper-account-settings {
+
+    #u-field-link-password,
+    #delete-account-btn {
+        background-color: $primary;
+        color: $inverse;
+        border: none;
+
+        &:hover {
+            background-color: $inverse;
+            color: $primary;
+            border: 1px solid $primary;
+        }
+    }
+
+    div.account-settings-sections .section .account-settings-section-body .u-field .field select~.icon-caret-down::after {
+        border-top: 7px solid #412234;
+    }
+}
+
+div.wrapper-account-settings .wrapper-header .account-nav button:hover,
+.wrapper-account-settings .wrapper-header .account-nav button:focus {
+    text-decoration: none;
+    border-bottom-color: $primary;
+}
+
+section.container.about h1 {
+    text-align: left;
+}
+
+div.contact-us-wrapper {
+
+    a.btn.btn-secondary,
+    button.btn-primary.btn-submit {
+        background-color: $primary;
+        color: $inverse;
+        padding: 10px 60px;
+        height: auto;
+        border-radius: 0;
+        border: 1px solid transparent;
+
+        &:hover:not(:disabled),
+        &:active:not(:disabled),
+        &:focus:not(:disabled) {
+            background-color: $inverse;
+            color: $primary;
+            border: 1px solid $primary;
+            box-shadow: none;
+        }
+    }
+}
+
+div.xmodule_display.xmodule_CapaModule div.problem button.btn-brand:hover {
+    background-color: $inverse;
+    color: $primary;
+    border: 1px solid $primary;
+}
+
+div.xmodule_display.xmodule_CapaModule div.problem .choicegroup label {
+
+    &:hover,
+    &:focus,
+    &:visited {
+        border: 2px solid $primary;
+    }
+}
+
+body.view-profile .profile-self .wrapper-profile-field-account-privacy .wrapper-profile-records button {
+    background-color: $primary;
+    color: $inverse;
+    border: 1px solid transparent;
+    box-shadow: none;
+    text-shadow: none;
+
+    &:hover,
+    &:focus,
+    &:visited {
+        background-color: $inverse;
+        color: $primary;
+        border: 1px solid $primary;
+        box-shadow: none;
+    }
+}
+
+section.instructor-dashboard-content-2 input[type="button"] {
+    text-shadow: none !important;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+div.instructor-dashboard-wrapper-2 section.idash-section#membership .member-lists-management .auth-list-container .member-list-widget input[type="button"].add,
+div.problem-browser button {
+    background-color: $primary;
+    background-image: none;
+    color: $inverse;
+    border-radius: 0;
+    border: 1px solid transparent;
+    text-shadow: none !important;
+    box-shadow: none;
+
+    &:hover:not(:disabled),
+    &:active:not(:disabled),
+    &:focus:not(:disabled) {
+        box-shadow: none;
+        background-color: $inverse;
+        background-image: none;
+        color: $primary;
+        border: 1px solid $primary;
+    }
+}
+
+
+
+div.instructor-dashboard-content-2 .instructor-nav .nav-item {
+    font-family: "Montserrat", Helvetica, Arial, sans-serif !important;
+
+    &:hover {
+        border: none;
+    }
+}
+
+body.view-profile .wrapper-profile-section-container-one .wrapper-profile-section-one {
+    border-top: 5px solid $primary;
+}
+
+.user-image-frame {
+    border-radius: 50%;
+    border: 1px solid #dddddd;
+}
+
+.side-container.card {
+    border-radius: 0%;
+
+    .username {
+        display: list-item;
+        text-transform: uppercase;
+        padding: 15px 0;
+        list-style-type: none;
+    }
+
+    @media screen and (max-width:991px) {
+        border: 0;
+    }
+
+    .hidden-mobile:not(.mobile-nav-link) {
+        display: block;
+    }
+}
+
+.dashboard-profile {
+    margin-left: 20px;
+
+    a:not(.btn),
+    a:visited:not(.btn) {
+        color: #5e5e5e;
+
+        &:before {
+            content: "Edit ";
+        }
+
+        .fa-pencil-square-o {
+            margin-left: -110px;
+        }
+
+        &:hover {
+            color: #5e5e5e;
+            text-decoration: underline;
+        }
+    }
+}
+
+
+.dashboard-profile {
+
+    &:active {
+        background-color: transparent;
+    }
+
+    &:hover {
+        background-color: transparent;
+    }
+
+}
+
+.side-container.card img {
+    padding: 5px;
+}
+
+section.home .courses-container .courses .courses-listing .courses-listing-item {
+
+    &:nth-child(3),
+    &:nth-child(4),
+    &:nth-child(5) {
+        display: none;
+    }
+
+}
+
+section.home .courses-container .courses .courses-listing .courses-listing-item,
+section.find-courses .courses-container .courses.no-course-discovery .courses-listing .courses-listing-item {
+
+    &:nth-child(3),
+    &:nth-child(4),
+    &:nth-child(5) {
+        display: none;
+    }
+
+}
+
+li.courses-listing-item {
+
+    &:nth-child(3),
+    &:nth-child(4),
+    &:nth-child(5) {
+        display: none;
+    }
+}
+
+li.course-item {
+    display: none;
+
+    &:nth-child(1),
+    &:nth-child(4) {
+        display: block;
+    }
+}
+
+div.discussion-module-header button.btn {
+    background-color: $primary;
+    color: $inverse;
+    border-radius: 0;
+    border: none;
+
+
+    &:hover:not(:disabled),
+    &:active:not(:disabled),
+    &:focus:not(:disabled) {
+        background-color: $inverse !important;
+        color: $primary !important;
+        border-color: $primary !important;
+        border: 1px solid $primary;
+    }
+}
+
+// malage theme
+.course-image,
+.course-info {
+    float: left;
+}
+
+section.courses-container .courses .course .course-image .cover-image {
+    height: auto;
+}
+
+section.home .courses-container .courses .courses-listing .courses-listing-item,
+section.find-courses .courses-container .courses.no-course-discovery .courses-listing .courses-listing-item {
+    width: calc(100%);
+    max-height: none;
+    margin-bottom: 0;
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        width: calc(100% - 1.8rem);
+    }
+}
+
+section.courses-container .courses article.course.card div.course-info .course-title {
+
+    margin: 5px 0 0 0;
+    height: auto;
+
+}
+
+section.courses-container .courses .course .course-info .course-date {
+    @media (min-width:479px) and (max-width: 767px) {
+        padding: 0px 15px;
+    }
+
+    @media screen and (max-width:478px) {
+        padding: 20px 15px 5px;
+    }
+
+}
+
+section.courses-container .courses .course .course-image .cover-image .learn-more {
+    @media (min-width:479px) and (max-width: 767px) {
+        left: calc(59% - 100px);
+        width: 169px;
+    }
+
+    @media screen and (max-width:478px) {
+        left: calc(90% - 100px);
+        width: 112px;
+        padding: 0;
+    }
+}
+
+section.courses-container .courses .course .course-image .cover-image::before {
+    @media screen and (max-width:478px) {
+        height: 137px;
+    }
+
+    @media (min-width:479px) and (max-width: 767px) {
+        height: 116px;
+    }
+}
+
+div.xmodule_display.xmodule_CapaModule .problem .capa_inputtype.textline input,
+.xmodule_display.xmodule_CapaModule .problem .inputtype.formulaequationinput input {
+    border-radius: 0;
+}
+
+div.xmodule_display.xmodule_CapaModule div.problem .action .submit-attempt-container .submit {
+    border-radius: 0;
+
+}
+
+div.xmodule_display.xmodule_SequenceModule .sequence-nav button.sequence-nav-button {
+    border-radius: 0;
+}
+
+div.xmodule_display.xmodule_SequenceModule .sequence-bottom button.sequence-nav-button {
+    border-radius: 0;
+}
+
+div.xmodule_display.xmodule_CapaModule div.problem .action .problem-action-btn:hover {
+
+    border-radius: 0;
+}
+
+div.xmodule_display.xmodule_SequenceModule .sequence-nav button.active {
+    background-color: transparent;
+
+    span.icon {
+        color: #5a5a5a;
+    }
+}
+
+
+section.course-info header.course-profile {
+    background: #f4f4f4;
+    box-shadow: none;
+    border-bottom: 0;
+
+    @media screen and (min-width:992px) {
+        height: 320px;
+
+    }
+}
+
+section.course-info header.course-profile .intro-inner-wrapper .media .hero {
+    border: 0;
+}
+
+div.side-container.card {
+
+    .dropdown-item {
+        padding: 0;
+        width: auto;
+
+        &:hover,
+        &:focus {
+            background-color: transparent;
+        }
+    }
+
+}
+
+section.home>header .outer-wrapper {
+    padding: 20px;
+}
+
+div.wrapper-footer {
+
+    border-top: 3px solid #ededed;
+}
+
+section.courses-container .courses .course .course-image .cover-image {
+
+    &::before {
+        height: 100%;
+    }
+
+    .learn-more {
+        border-radius: 0;
+        top: calc(50% - 25px);
+    }
+}
+
+section.highlighted-courses .courses,
+.find-courses .courses {
+    padding: 0;
+}
+
+
+section.home>.courses-container.container {
+    margin-top: -30px;
+}
+
+div.wrapper-footer {
+    margin-top: 0;
+}
+
+body.view-progress {
+    div#content {
+        padding: 0;
+    }
+
+    .progress {
+        height: auto;
+        background-color: transparent;
+        border-radius: 0;
+    }
+}
+
+section.courses-container .courses article.course.card div.course-info .course-title {
+
+    font-family: "Roboto Slab", Georgia, Times, Times New Roman, serif !important;
+    font-weight: 700 !important;
+    font-size: 22px !important;
+
+    @media screen and (max-width:991px) {
+        font-size: 16px !important;
+    }
+}
+
+div.discussion-module-header button.btn,
+button.discussion-show.btn,
+body.view-course form button,
+form#unenroll_form input.submit-button {
+    background-color: $primary;
+    background-image: none;
+    color: $inverse;
+    border-radius: 0;
+    border: 1px solid transparent;
+    box-shadow: none;
+    text-shadow: none;
+
+
+    &:hover:not(:disabled),
+    &:active:not(:disabled),
+    &:focus:not(:disabled) {
+        background-color: $inverse;
+        background-image: none;
+        color: $primary;
+        border-color: $primary;
+        border: 1px solid $primary;
+        box-shadow: none;
+        text-shadow: none;
+    }
+}
+
+div.container div.wrapper-logo {
+    margin-bottom: 15px;
+}
+
+div.empty-dashboard-message a.btn {
+
+    box-shadow: none;
+    border-radius: 0;
+
+    &:hover:not(:disabled),
+    &:active:not(:disabled),
+    &:focus:not(:disabled) {
+        background-color: $inverse;
+        background-image: none;
+        color: $primary;
+        border-color: $primary;
+        border: 1px solid $primary;
+    }
+
+}
+
+div.wrapper-account-settings .wrapper-header .account-nav button.active {
+    border-bottom-color: $primary;
+}
+
+div.account-settings-sections .section .account-settings-section-body .u-field .field .field-input,
+div.account-settings-sections .section .account-settings-section-body .u-field .field select {
+    border-radius: 0;
+}
+
+section.discussion {
+    textarea.wmd-input {
+        border-radius: 0;
+    }
+}
+
+
+div.wrapper-account-settings #u-field-link-password,
+div.wrapper-account-settings #delete-account-btn {
+    border: 1px solid transparent;
+    border-radius: 0;
+}
+
+button,
+input,
+textarea {
+
+    &:focus {
+        outline: none !important;
+    }
+}
+
+button.btn-outline-primary {
+    color: $inverse;
+    background-color: $primary;
+    border-radius: 0;
+    border-color: transparent;
+    background-image: none;
+    box-shadow: none;
+    text-shadow: none;
+
+    &:hover,
+    &:focus,
+    &:not(:disabled):not(.disabled):active,
+    &:active {
+        color: $primary;
+        background-color: $inverse;
+        border-radius: 0;
+        border-color: $primary;
+    }
+}
+
+input#search {
+    height: 38px;
+    border-radius: 0;
+}
+
+button.btn-primary:not(:disabled):not(.disabled):active {
+    color: $primary;
+    background-color: $inverse;
+    border-radius: 0;
+    border-color: $primary;
+}
+
+section#discussion-container div.discussion-body {
+    input {
+        border-radius: 0;
+    }
+
+    textarea#wmd-input-js-post-body-undefined {
+        border-radius: 0;
+    }
+}
+
+form div#wmd-button-row-js-post-body-undefined button,
+form.discussion-reply-new div.reply-body button,
+section#discussion-container button.wmd-button {
+    background-color: transparent;
+}
+
+body.discussion .action-button .action-icon {
+    border: none;
+    transition: none;
+
+    &:hover {
+        border: none;
+    }
+
+}
+
+
+body.discussion .action-button .action-icon:hover {
+    border: none;
+    transition: none;
+}
+
+body.discussion .action-button.action-follow:hover,
+body.discussion .action-button.action-follow:focus,
+body.discussion .action-button.action-vote:hover,
+body.discussion .action-button.action-vote:focus,
+body.discussion .action-button.action-more:hover,
+body.discussion .action-button.action-more:focus {
+
+    border: none;
+    border-radius: 0;
+
+    span.action-icon {
+        border-radius: 0;
+    }
+}
+
+form.discussion-reply-new textarea#wmd-input-reply-body-5eddf11c4d0bac0011000000 {
+    border-radius: 0;
+}
+
+div.content-wrapper .course-tabs {
+    overflow-x: hidden;
+}
+
+div.has-breadcrumbs .breadcrumbs .all-topics {
+    font-size: 1rem;
+    margin-top: -5px;
+    border: 1px solid $primary;
+    height: 38px;
+    color: $primary;
+
+    &:hover {
+        border: 1px solid $primary;
+        color: $inverse;
+        background-color: $primary;
+        text-decoration: none;
+    }
+}
+
+section#discussion-container {
+    button.btn.btn-outline-primary.btn-small.search-button {
+        height: 38px;
+    }
+
+    a.username {
+        color: $primary;
+    }
+
+    button.action-button {
+        border-radius: 0;
+        transition: none;
+    }
+}
+
+div.wrapper-profile {
+    .learner-achievements .learner-message p.message-actions a.btn-brand {
+        font-size: 1rem;
+        margin-top: -5px;
+        border-radius: 0;
+        border: 1px solid $primary;
+        color: $primary;
+        background-color: $inverse;
+        box-shadow: none;
+
+        &:hover {
+            border: 1px solid $primary;
+            color: $inverse;
+            background-color: $primary;
+            text-decoration: none;
+            box-shadow: none;
+        }
+    }
+}
+
+body.view-profile .wrapper-profile-section-container-one .wrapper-profile-section-one .profile-section-one-fields div.u-field.u-field-dropdown.u-field-country.editable-toggle.mode-display,
+div.u-field.u-field-dropdown.u-field-language_proficiencies.editable-toggle.mode-display,
+div.u-field.editable-toggle.mode-display:hover {
+    &:hover {
+        background-color: transparent;
+        border-radius: 0px;
+    }
+}
+
+section.courses-container {
+    article.course.card {
+        a:hover {
+            text-decoration: none !important;
+        }
+    }
+}
+
+header.global-header {
+    h1.header-logo a {
+        @media screen and (max-width:991px) {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+nav.wrapper-course-material .course-tabs .tab a,
+div.content-wrapper nav.course-tabs .nav-item .nav-link {
+    @media screen and (max-width:991px) {
+        padding: 8px;
+    }
+}
+
+div.mobile-menu .mobile-nav-link a {
+
+    @media screen and (max-width:991px) {
+        color: $primary;
+    }
+}
+
+div.problem-browser {
+    button {
+        background-color: $primary;
+        background-image: none;
+        color: $inverse;
+        border-radius: 0;
+        border: 1px solid transparent;
+        font-size: 0.8125em;
+        font-weight: 600;
+        text-shadow: none !important;
+        box-shadow: none;
+
+        &:hover:not(:disabled),
+        &:active:not(:disabled),
+        &:focus:not(:disabled) {
+            box-shadow: none;
+            background-color: $inverse;
+            background-image: none;
+            color: $primary;
+            border: 1px solid $primary;
+        }
+    }
+
+    input {
+        height: 28px;
+    }
+}
+
+div.wrapper-account-settings .wrapper-header .account-nav .account-nav-link {
+    padding-bottom: 11px;
+}
+
+div.xmodule_display.xmodule_CapaModule div.problem .choicegroup label,
+div.xmodule_display.xmodule_CapaModule div.problem .choicetextgroup label,
+div.xmodule_display.xmodule_ConditionalModule div.problem .xmodule_display.xmodule_CapaModule .choicegroup label,
+div.xmodule_display.xmodule_ConditionalModule div.problem .xmodule_display.xmodule_CapaModule .choicetextgroup label,
+div.xblock--drag-and-drop .drag-container .option {
+    border-radius: 0;
+}
+
+div.discussion-module button.btn {
+    color: $inverse;
+    background-color: $primary !important;
+    border-radius: 0;
+    background-image: none !important;
+    box-shadow: none !important;
+    border-color: transparent !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $primary !important;
+        background-color: $inverse !important;
+        border-radius: 0;
+        background-image: none !important;
+        box-shadow: none !important;
+        border-color: $primary !important;
+    }
+}
+
+
+
+
+button.btn.btn-link.bookmark-button.bookmarked {
+    border: 0;
+    box-shadow: none;
+}
+
+div.course-bookmarks .bookmarks-results-list .list-item-right-section,
+div.course-bookmarks .bookmarks-results-list .list-item-left-section,
+div.course-bookmarks .bookmarks-results-list .bookmarks-results-list-item::before {
+    color: $primary;
+
+    &:hover {
+        color: $primary;
+        text-decoration: none;
+    }
+}
+
+ol.tabs .tab a.active,
+ol.tabs .tab a:visited.active {
+    color: $primary;
+    border-bottom-color: $primary;
+    background-color: transparent;
+}
+
+div.course-bookmarks .bookmarks-results-list .bookmarks-results-list-item:hover {
+    border-color: $primary;
+    text-decoration: none;
+
+    div.list-item-left-section,
+    h3.list-item-breadcrumbtrail {
+        color: $primary;
+    }
+}
+
+nav[aria-label="Bookmarks"] a {
+    color: $primary;
+}
+
+section.discussion .post-label.post-label-following,
+section.discussion.inline-discussion .inline-thread .forum-nav-bar .all-posts-btn {
+    color: $primary;
+}
+
+section.discussion.inline-discussion .new-post-article .add-post-cancel {
+    color: $inverse;
+}
+
+section.discussion .action-button .action-icon {
+    border: 0;
+    border-radius: 0;
+}
+
+input#discussion-forum-title {
+    border-radius: 0;
+
+    &:focus {
+        box-shadow: none;
+        border-color: none;
+    }
+}
+
+section.discussion .action-button {
+    border-radius: 0;
+    transition: 0;
+    border: 0;
+
+    &:hover {
+        border-color: transparent;
+    }
+}
+
+@media screen and (max-width:991px) {
+    div.xmodule_display.xmodule_SequenceModule .sequence-bottom button.sequence-nav-button {
+
+        &:hover,
+        &:active {
+            background-color: transparent;
+
+            span {
+                color: inherit;
+            }
+        }
+    }
+}
+
+div.contact-us-wrapper .btn-signin,
+body.view-profile .profile-self .wrapper-profile-field-account-privacy .u-field-account_privacy .btn-change-privacy {
+    background-color: $primary;
+    background-image: none;
+    color: $inverse;
+    border-radius: 0;
+    border: 1px solid transparent;
+    font-size: 0.8125em;
+    font-weight: 600;
+    text-shadow: none !important;
+    box-shadow: none;
+
+    &:hover,
+    &:active,
+    &:focus {
+        box-shadow: none;
+        background-color: $inverse;
+        background-image: none;
+        color: $primary;
+        border: 1px solid $primary;
+    }
+
+}
+
+div.contact-us-wrapper a.create-account {
+    color: $primary;
+
+    &:hover {
+        color: $primary;
+    }
+}
+
+div.contact-us-wrapper {
+
+    textarea,
+    input,
+    select {
+        border-radius: 0;
+    }
+}
+
+body.view-profile .wrapper-profile-section-container-one .wrapper-profile-section-one .profile-section-one-fields div.u-field.u-field-dropdown.u-field-country.editable-toggle.mode-placeholder {
+    border: 0;
+    border-radius: 0;
+
+    span.u-field .message-can-edit {
+        display: block;
+    }
+}
