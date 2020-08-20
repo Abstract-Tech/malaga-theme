@@ -1555,3 +1555,160 @@ body.view-profile .wrapper-profile-section-container-one .wrapper-profile-sectio
         display: block;
     }
 }
+
+section.find-courses {
+    .courses-container {
+        @extend .container;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.at-btn {
+    background-color: $primary;
+    background-image: none;
+    color: $inverse;
+    border-radius: 0;
+    border: 0;
+    font-size: 0.8125em;
+    font-weight: 600;
+    text-shadow: none !important;
+    box-shadow: none;
+
+    &:hover,
+    &:active,
+    &:focus {
+        box-shadow: none;
+        background-color: $inverse;
+        background-image: none;
+        color: $primary;
+        border: 1px solid $primary;
+    }
+}
+
+section.home>header .title .course-search button.search-button {
+    @extend .at-btn;
+    margin-right: -30px;
+}
+
+section.home>header .title .course-search .search-input:focus,
+section.find-courses .discovery-input:focus {
+    border-color: $primary;
+}
+
+#discovery-form {
+    @media screen and (max-width:478px) {
+        width: calc(100% - 30px);
+    }
+
+    width: 100%;
+}
+
+section.find-courses .discovery-submit {
+    @extend .at-btn;
+}
+
+section.find-courses {
+
+    div#discovery-message,
+    form.wrapper-search-input {
+        width: 100%;
+        font-size: 22px;
+    }
+}
+
+li.courses-listing-item section.course-info {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+section.find-courses section.courses-container .courses .course .course-image .cover-image {
+    @media (min-width : 1301px) {
+        height: 160px;
+
+        &::before {
+            height: 160px;
+        }
+    }
+}
+
+section.courses-container .courses .course {
+    border-bottom: 3px solid $primary;
+}
+
+section.find-courses .loading-spinner {
+    background: $primary;
+}
+
+section.find-courses .search-facets .header-search-facets,
+section.find-courses .search-facets .header-facet {
+    font-size: 22px !important;
+}
+
+
+div#dashboard-search-bar {
+
+    .search-button,
+    .cancel-button {
+
+        &:hover,
+        &:active,
+        &:focus {
+            background: $primary;
+        }
+    }
+}
+
+section.find-courses .filters .clear-filters {
+    color: $primary;
+
+    &hover {
+        background-color: $inverse;
+        border: 1px solid $primary;
+    }
+}
+
+section.find-courses .filters li {
+    background-color: $inverse;
+    border: 1px solid $primary;
+}
+
+section.find-courses .courses-container .courses .courses-listing .courses-listing-item {
+    @media screen and (max-width:478px) {
+        margin: 0 0 30px 15px;
+        display: block;
+    }
+}
+
+ul.courses-listing.courses-list {
+    @media screen and (max-width:478px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+section.find-courses .courses-container .courses:not(.no-course-discovery) {
+    @media screen and (max-width:478px) {
+        width: 91%;
+    }
+}
+
+section.courses-container .courses .course {
+
+    border: 0;
+}
+
+
+ul.courses-listing.courses-list li {
+
+    border: 1px solid #bebebe;
+
+}
+
+section.courses-container .courses .course .course-info .course-title {
+    margin: 5px 0 20px 0;
+}
