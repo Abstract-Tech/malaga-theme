@@ -1712,3 +1712,26 @@ ul.courses-listing.courses-list li {
 section.courses-container .courses .course .course-info .course-title {
     margin: 5px 0 20px 0;
 }
+
+div.content-wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+form.search-form.input-group {
+    flex-direction: row;
+}
+
+header.global-header div.main-header {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+nav.nav-colophon li {
+    margin-left: 15px;
+}
+
+#footer-openedx div.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
