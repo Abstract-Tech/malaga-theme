@@ -935,7 +935,6 @@ section.courses-container .courses .course .course-image .cover-image {
 
 section.home .courses-container .courses .courses-listing .courses-listing-item,
 section.find-courses .courses-container .courses.no-course-discovery .courses-listing .courses-listing-item {
-    width: calc(100%);
     max-height: none;
     margin-bottom: 0;
 
@@ -1734,4 +1733,8 @@ nav.nav-colophon li {
 #footer-openedx div.container {
     max-width: 1280px;
     margin: 0 auto;
+}
+
+.course-info-banner{
+display: none;
 }
