@@ -455,8 +455,14 @@ header.global-header {
     padding: 0;
 }
 
+
 header.global-header .nav-links .secondary .dropdown-user-menu {
     right: auto;
+
+    @media screen and (max-width:1500px) {
+        right: 30px;
+        top: 75px;
+    }
 }
 
 select.action-preview-select option {
@@ -935,7 +941,6 @@ section.courses-container .courses .course .course-image .cover-image {
 
 section.home .courses-container .courses .courses-listing .courses-listing-item,
 section.find-courses .courses-container .courses.no-course-discovery .courses-listing .courses-listing-item {
-    width: calc(100%);
     max-height: none;
     margin-bottom: 0;
 
@@ -1711,4 +1716,62 @@ ul.courses-listing.courses-list li {
 
 section.courses-container .courses .course .course-info .course-title {
     margin: 5px 0 20px 0;
+}
+
+div.content-wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+form.search-form.input-group {
+    flex-direction: row;
+}
+
+header.global-header div.main-header {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+nav.nav-colophon li {
+    margin-left: 15px;
+}
+
+#footer-openedx div.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.course-info-banner {
+    display: none;
+}
+
+footer#footer-openedx .row {
+    display: flex;
+
+    @media screen and (max-width:991px) {
+        flex-direction: column;
+    }
+
+    div.address {
+        padding-right: 15px;
+    }
+}
+
+nav.nav-colophon li {
+
+    @media screen and (max-width:991px) {
+        margin-top: 15px;
+        margin-left: 0;
+    }
+}
+
+div.wrapper-msg.wrapper-auto-cert .auto-cert-message {
+    border-left: 3px solid $primary;
+}
+
+div.wiki-wrapper section.wiki .nav-tabs li.active a {
+    color: $primary;
+    font-weight: bold;
+    background-color: #f2f2f2;
+    border-color: $primary;
 }
